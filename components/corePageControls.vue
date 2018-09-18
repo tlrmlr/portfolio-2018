@@ -35,7 +35,7 @@ export default {
 <style scoped>
 
 a, .image-button {
-    margin-left: 8px;
+    margin-left: 12px;
 }
 
 .info-button {
