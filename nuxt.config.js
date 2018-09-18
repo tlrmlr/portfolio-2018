@@ -6,6 +6,7 @@ module.exports = {
     '~assets/reset.css',
     '~assets/anim.css'
   ],
+  plugins: ['~/plugins/vue-touch'],
   head: {
     title: 'Tyler Miller | Product Designer',
     meta: [
@@ -26,6 +27,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: ['vue-touch'],
     /*
     ** Run ESLint on save
     */

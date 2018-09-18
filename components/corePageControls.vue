@@ -62,8 +62,6 @@ a, .image-button {
 
 .image-button:hover {
     cursor: pointer;
-    transform: translateY(-2px);
-    transition: transform 80ms ease-in-out;
 }
 
 span {

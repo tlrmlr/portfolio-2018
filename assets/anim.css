@@ -29,12 +29,12 @@
 
 @media (max-width: 720px) {
   .main-wipe-enter, .main-wipe-leave-to {
-    transform: translateY(100%);
+    transform: translateY(2%);
     opacity: 0;
   }
     
   .main-wipe-enter-active, .main-wipe-leave-active {
-    transition: all 320ms ease-in-out;
+    transition: all 540ms ease-in-out;
   }
 }
 
@@ -44,5 +44,5 @@
 }
   
 .intro-fade-enter-active, .intro-fade-leave-active {
-  transition: all 1620ms ease-out;
+  transition: all 900ms ease-out 1200ms;
 }

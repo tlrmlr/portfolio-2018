@@ -1,5 +1,8 @@
 <template>
-  <section class="home">
+  <section 
+    class="home"
+    v-touch:swipe.left="decreaseIndex"
+    v-touch:swipe.right="increaseIndex">
     <transition
       appear
       name="intro-fade">
@@ -39,6 +42,26 @@ export default {
     franklyTVAppImage,
     franklyUniqloImage,
     welldoneTrackerImage
+  },
+  methods: {
+    increaseIndex() {
+        let newIndex = this.$store.state.currentWorkIndex + 1
+
+        if (newIndex === this.$store.state.myWork.length) {
+        newIndex = 0
+        }
+
+        this.$store.state.currentWorkIndex = newIndex
+    },
+    decreaseIndex() {
+    let newIndex = this.$store.state.currentWorkIndex - 1
+
+        if (newIndex < 0) {
+        newIndex = this.$store.state.myWork.length - 1
+        }
+
+        this.$store.state.currentWorkIndex = newIndex
+    }
   },
   data() {
     return {
