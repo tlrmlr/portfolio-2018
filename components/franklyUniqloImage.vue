@@ -15,14 +15,10 @@ export default {
 </script>
 
 <style scoped>
- img {
-     height: 150%;
-     
- }
 
  @media (max-width: 720px) {
      img {
-         margin-top: 10vh;
+         margin-top: 20vh;
      }
  }
 </style>

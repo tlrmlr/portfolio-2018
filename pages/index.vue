@@ -103,7 +103,7 @@ export default {
 
 @media (max-width: 720px) {
   .home {
-    grid-gap: 16px;
+    grid-gap: 0px;
   }
 
   .imagery {
@@ -113,10 +113,14 @@ export default {
   .introcard, .info {
     grid-column: 2/4;
     margin-top: 0;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .introcard {
-    margin-top: 16px;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .info {
@@ -132,7 +136,7 @@ export default {
   }
 
   .imagery img {
-    margin-top: 15vh;
+    margin-top: 20vh;
   }
 }
 
