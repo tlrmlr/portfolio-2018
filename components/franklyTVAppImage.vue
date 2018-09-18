@@ -22,7 +22,8 @@ export default {
 
  @media (max-width: 720px) {
      img {
-         margin-bottom: 20vh;
+         margin-bottom: 15vh;
+         width: 175%;
      }
  }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="parent">
         <h1>Tyler Miller</h1>
         <h2>Product designer in San Francisco, <br class="linebreak"/>working on digital things.</h2>
         <coreLinkList class="link-list"/>
@@ -42,7 +42,7 @@ h2 {
 }
 
 @media (max-width: 720px) {
-    section {
+    section.parent {
         background-image: linear-gradient(
         rgba(0,0,0,0.96),
         rgba(0,0,0,0.56) 10%,
