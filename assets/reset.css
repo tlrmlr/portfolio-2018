@@ -1,0 +1,34 @@
+:root {
+  --fsb: 16px;
+  --sans: Lato;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+  font-size: var(--fsb);
+  font-family: var(--sans);
+}
+
+h1, h2, h3, h4, h5, h6, p, span, li, a {
+  font-size: var(--fsb);
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.22em;
+  font-weight: 100;
+  letter-spacing: 0.015em;
+}
+
+body {
+  background-color:black;
+  color: white;
+}
