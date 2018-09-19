@@ -17,13 +17,11 @@ export default {
 <style scoped>
  img {
      width: 150%;
-     
  }
-
  @media (max-width: 720px) {
      img {
-         margin-bottom: 15vh;
-         width: 175%;
+        margin-bottom: 15vh;
+        width: 150%;
      }
  }
 </style>

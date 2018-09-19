@@ -79,6 +79,10 @@ span {
     a, .image-button {
         margin-left: 16px;
     }
+    
+    a, span {
+        font-weight: 500;
+    }
 }
 
 
