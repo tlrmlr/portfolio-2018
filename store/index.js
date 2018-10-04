@@ -58,8 +58,8 @@ const createStore = () => {
           date: "December 2016",
           imageComponent: "franklyTVAppImage",
           titleComponent: "franklyTVAppTitle",
-          hasStudy: false,
-          studyUrl: '',
+          hasStudy: true,
+          studyUrl: 'https://medium.com/@tylermiller.is/re-imagining-television-b09d03a2030c',
           currentImage: 0,
           imageList: [
             {
@@ -70,7 +70,17 @@ const createStore = () => {
             {
               title: 2,
               url: "work/tvapp/two.png",
-              alt: "The "
+              alt: "Browse news with the TV Application."
+            },
+            {
+              title: 3,
+              url: "work/tvapp/three.png",
+              alt: "The queue lets users see what video is coming next."
+            },
+            {
+              title: 4,
+              url: "work/tvapp/four.png",
+              alt: "Hourly weather displays different weather data over time."
             }
           ]
         },

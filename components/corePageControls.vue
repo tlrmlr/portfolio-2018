@@ -1,11 +1,5 @@
 <template>
     <section>
-        <a 
-        class="info-button" 
-        :href="this.$store.state.myWork[this.$store.state.currentWorkIndex].studyUrl" 
-        v-if="this.$store.state.myWork[this.$store.state.currentWorkIndex].hasStudy">
-            <span>i</span>
-        </a>
         <transition-group 
             class="screen-list" 
             name="icon-wipe"
@@ -18,6 +12,17 @@
                 <span>{{ image.title }}</span>
             </div>
         </transition-group>
+        <transition
+        name="icon-wipe"
+        appear>
+            <a 
+            class="info-button" 
+            target="_blank"
+            :href="this.$store.state.myWork[this.$store.state.currentWorkIndex].studyUrl" 
+            v-if="this.$store.state.myWork[this.$store.state.currentWorkIndex].hasStudy">
+                <span>i</span>
+            </a>
+        </transition>
     </section>    
 </template>
 
@@ -34,19 +39,23 @@ export default {
 
 <style scoped>
 
+section {
+    display: flex;
+}
+
 a, .image-button {
     margin-left: 12px;
 }
 
 .info-button {
-    border-radius: 8px;
-    height: 16px;
-    width: 16px;
+    border-radius: 14px;
+    height: 28px;
+    width: 28px;
     display: grid;
     justify-content: center;
     align-items: center;
-    color: black;
-    background-color: white;
+    border: 1px solid white;
+    color: white;
     text-decoration: none;
 }
 
@@ -66,7 +75,7 @@ a, .image-button {
 
 span {
     user-select: none;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 14px;
     margin-bottom: 2px;
 }
@@ -78,10 +87,6 @@ span {
 @media (max-width: 720px) {
     a, .image-button {
         margin-left: 16px;
-    }
-    
-    a, span {
-        font-weight: 500;
     }
 }
 

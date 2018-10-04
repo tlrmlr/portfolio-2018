@@ -1,14 +1,14 @@
 <template>
     <section class="parent">
         <h1>Tyler Miller</h1>
-        <h2>Product designer in San Francisco, <br class="linebreak"/>working on digital things.</h2>
+        <h2>Multi-disciplinary product designer. <br class="linebreak" />Finding small ways to make a big impact.</h2>
         <coreLinkList class="link-list"/>
     </section>
 </template>
 
 <script>
 import coreLinkList from "@/components/coreLinkList.vue"
-
+1
 export default {
     components: {
         coreLinkList
@@ -27,7 +27,7 @@ h1, h2  {
 }
 
 h1 {
-    font-weight: 300;
+    font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.04em;
 }
