@@ -115,8 +115,8 @@ const createStore = () => {
           date: "April 2015",
           imageComponent: "welldoneTrackerImage",
           titleComponent: "welldoneTrackerTitle",
-          hasStudy: false,
-          studyUrl: '',
+          hasStudy: true,
+          studyUrl: 'https://medium.com/@tylermiller.is/keeping-pumps-pumping-5ff892b9feeb',
           currentImage: 0,
           imageList: [
             {
